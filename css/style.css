@@ -1,3 +1,10 @@
+#header .inner h1 {
+  position: relative;
+  width: 772px;
+  height: 78px;
+  margin: 0 auto 22px auto;
+}
+
 #header .inner ul li {
   float: left;
   margin-right: 45px;
