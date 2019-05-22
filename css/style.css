@@ -1,0 +1,5 @@
+#header .inner ul li {
+  float: left;
+  margin-right: 45px;
+  list-style: none;
+}
