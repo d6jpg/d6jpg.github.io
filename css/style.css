@@ -1,3 +1,19 @@
+body {
+  padding: 50px;
+  font: 36px Menlo;
+  color: #ebebe0
+}
+
+h1 {
+  font-size: 100px;
+  font-style: italic;
+}
+
+h1 {
+  margin: 0 0 40px;
+  text-align: center;
+}
+
 #header .inner h1 {
   position: relative;
   width: 772px;
