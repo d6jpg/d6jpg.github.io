@@ -43,18 +43,23 @@ function setup(){
         counts[word].tf += 1;
       }
     }
+
+
   }
 
   for(var i = 0; i < keys.length; i++){
     var word = keys[i];
     // counts[word].df--; // occur 'division-by-zero'
     for(var j = 0; j < files.length; j++){
+      // files[i]に単語wordがあればカウント(min is 1)
       if(tokens[j].indexOf(word)){
         counts[word].df++;
       }
     }
   }
 
+  // tfidfの値は，(word, document)の２つのキーから取得するものであるから，
+  // tfの値の求め方がまず違っており，そこから求まるtfidf値も間違っている．
   for(var i = 0; i < keys.length; i++){
     var word = keys[i];
     var wordobj = counts[word];
